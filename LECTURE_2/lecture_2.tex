@@ -1,0 +1,125 @@
+\chapterimage{./Images/head2.jpg} % Chapter heading image
+\chapter{AC Steady State Analysis (Thomas + Rosa 669-689)}
+
+
+\begin{vocabulary}
+    [Phasor]
+    Phasors solve \textit{linear} circuits with sinusoidal sources. We can use phasors to solve circuits with \textit{time-varying} sources, but we need to convert the time-varying sources to phasors first.
+\end{vocabulary}
+\begin{remark}
+    Linear Differential Equation have solutions with two parts:
+    \begin{itemize}
+        \item Homogenous solution: Response to initial conditions
+        \item Particular solution: Response to forcing function
+    \end{itemize}
+    Since they're linear, we can add the two solutions together using \textbf{superposition} to get the total solution.
+\end{remark}
+
+\begin{corollary}
+    [Stable Systems]
+    For stable systems (e.g. passive) circuits:
+    \[
+        \text{Homogenous solution} \to 0 \text{ as } t \to \infty
+    \]
+\end{corollary}
+
+\begin{remark}
+    Phasor analysis is the fastest way to get a \textit{particular solution} for a circuit with sinusoidal sources.
+\end{remark}
+
+\begin{example}
+    [INSERT IMAGE FROM PHONE]
+    Find $i(t)$ after transient decay.\\
+    \begin{align}
+        Ri & + L\frac{di}{dt}= V \cos(\omega t \phi)                           \\
+           & Vcos(\omega t \phi) = Re{\{Ve^{j(\omega t + \phi)} = \tilde{V}\}} \\
+    \end{align}
+    Find $\tilde{I}$ from:
+    \[
+        R \tilde{I} + L\frac{d\tilde{I}}{dt} = \tilde{V}
+    \]
+    Then take real part of $\tilde{I}$ to get $i(t)$.\\
+    \textbf{General for of solution:}
+    \[
+        \tilde{I} = \textbf{I}e^{j\omega t} \quad \text{where } \textbf{I} \text{ is a complex number without time dependence (doesn't contain)} e^{j\omega t}
+    \]
+    Substitute into the differential equation:
+    \[
+        R\textbf{I}e^{j\omega t} + Lj\omega \textbf{I}e^{j\omega t} = Ve^{j\omega t + \phi}
+    \]
+    Find $\textbf{I}$ by cancelling $e^{j\omega t}$ terms:
+    \[
+        R \textbf{I} + j\omega L \textbf{I}= Ve^{j\phi} = \textbf{V} \quad \text{Voltage phasor}
+    \]
+    \begin{align}
+        \textbf{I} & = \frac{\textbf{V}}{R + j\omega L}                                                                            \\
+        \textbf{I} & = \frac{V}{\sqrt{R^2 + (\omega L)^2}}\angle{\phi - \tan^{-1} \frac{\omega L}{R}} \quad  \text{Current phasor} \\
+        \tilde{I}  & = \textbf{I}e^{j\omega t}                                                                                     \\
+        \tilde{I}  & = \frac{|V|}{\sqrt{R^2 + (\omega L)^2}}e^{j\omega t + \phi - \tan^{-1} \frac{\omega L}{R}}
+    \end{align}
+    Now we can reconstruct $i(t)$:
+    \begin{align}
+        i(t) & = \Re\{\tilde{I}\} = \Re\left\{\frac{|V|}{\sqrt{R^2 + (\omega L)^2}}e^{j\omega t + \phi - \tan^{-1} \frac{\omega L}{R}}\right\} \\
+             & = \frac{|V|}{\sqrt{R^2 + (\omega L)^2}}\cos(\omega t + \phi - \tan^{-1} \frac{\omega L}{R})
+    \end{align}
+\end{example}
+
+\begin{remark}
+    In practice, skip \textit{intermediate} variables $\tilde{i}$ and $\tilde{V}$
+\end{remark}
+
+\subsection*{Steps for Phasor Analysis}
+\begin{enumerate}
+    \item Defiune phasors $V\cos(\omega t + \phi) \iff V\angle{\phi}$
+    \item Map L's and C's to impedances \begin{align}
+              v  = L\frac{di}{dt}   & \iff \textbf{V} = j\omega L \textbf{I}      \\
+              i = C\frac{dv}{dt}    & \iff \textbf{I} = j\omega C \textbf{V}      \\
+              \text{or equivalent } & \textbf{V} = \frac{1}{j\omega C} \textbf{I}
+          \end{align}
+    \item Mesh (or Nodal) analysis for phasor solution
+    \item Recreate time-domain solution from phasor solution (e.g. get $i(t)$ from $\textbf{{I}}$)
+\end{enumerate}
+
+\begin{observation}
+    [Converting from Time to Phasor Domain]
+    \begin{align}
+        V\cos(\omega t + \phi) & \iff \textbf{V} = V\angle{\phi} \\
+        I\cos(\omega t + \phi) & \iff \textbf{I} = I\angle{\phi}
+    \end{align}
+\end{observation}
+
+\begin{example}
+    [Example 2]
+    Find the steady state solution for $i(t)$ in the circuit below:
+
+    \begin{enumerate}
+        \item Step 1: Define phasors
+              \[                  v(t) = 1\cos(10 t) \iff \textbf{V} = 1\angle{0}
+              \]
+        \item Step 2: Map L's and C's to impedances \begin{align}
+                  R = 1 \quad L = j\omega 1 \quad C = \frac{1}{j\omega 0.1} \\
+              \end{align}
+        \item Step 3: Mesh analysis for phasor solution
+              \begin{align}
+                  \textbf{I} & = \frac{1\angle{0}}{1 + j(10)(1) + \frac{1}{j(10)(0.1)}} \\
+                             & = 0.11 \angle{-83^\circ}
+              \end{align}
+        \item Step 4: Recreate time-domain solution from phasor solution \[i(t) = 0.11\cos(10t - 83^\circ)\]
+    \end{enumerate}
+\end{example}
+
+\section{Frequency Response}
+\begin{example}
+    THIRD IMAGE
+
+    Find $\textbf{V_0}$ as a function of $\textbf{V_i}$ and $w$
+    \begin{align}
+        \textbf{V_0}                           & = \frac{1/j\omega C}{R + 1/....}\textbf{V_i} \\
+        \textbf{\textnormal{\frac{V_0}{V_i} }} & = \frac{1}{1 + j\omega RC}
+    \end{align}
+    Now we can plot the magnitude and phase of $\textbf{V_0}/\textbf{V_i}$ as a function of $\omega$ on a log-log plot.
+    FOURTH IMAGE
+    Essentially we made a low-pass filter, and characterized it's frequency response.
+\end{example}
+
+

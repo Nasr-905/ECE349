@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1725896583.33162 "main.bcf" "main.bbl" "main" 1726073579.39562 0
-  "main.bcf" 1726073578 108089 1e52d52ee778d62b99d3d892e32ce93d "pdflatex"
+["biber main"] 1725896583.33162 "main.bcf" "main.bbl" "main" 1726074131.87936 0
+  "main.bcf" 1726074131 108089 1e52d52ee778d62b99d3d892e32ce93d "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1726073573.8735 "c:/Users/User PC/Desktop/ECE349/main.tex" "main.pdf" "main" 1726073579.39658 0
+["pdflatex"] 1726074124.31278 "c:/Users/User PC/Desktop/ECE349/main.tex" "main.pdf" "main" 1726074131.88041 0
   "C:/Users/User PC/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1725974991 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/User PC/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1725383511 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/User PC/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725274263 24266312 a3709a6271aceafba7b0f4c2b9582318 ""
@@ -342,15 +342,15 @@
   "C:/Users/User PC/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
   "Images/banner.jpg" 1725299214 2147598 3cd4c0412b19cbf9159413bbf7588d01 ""
   "Images/head1.jpg" 1725330509 1951076 b2ccdf3e0bf4674fc55aeb371e390120 ""
-  "LECTURE_4/lecture_4.aux" 1726073578 6569 6076adc8602b4d5f71e6994af793ad70 "pdflatex"
-  "LECTURE_4/lecture_4.tex" 1726073569 5630 31179d330f2828470984e9938d93721a ""
+  "LECTURE_4/lecture_4.aux" 1726074131 6786 3f02e841c7ce0c8dcee58850ffdc371f "pdflatex"
+  "LECTURE_4/lecture_4.tex" 1726074116 6576 643807aad0bf41d0083aff550896c05e ""
   "c:/Users/User PC/Desktop/ECE349/main.tex" 1726071192 5516 3c85667a858feb5111ebb735adebcabc ""
-  "main.aux" 1726073578 639 3d39faca1e4ececb5eba82f5931c1c9a "pdflatex"
+  "main.aux" 1726074131 639 3d39faca1e4ececb5eba82f5931c1c9a "pdflatex"
   "main.bbl" 1725896589 486 76d65a242ec496c9b4361af646ff12cb "biber main"
-  "main.out" 1726073578 1117 3129960fca87f992e67a05a3a45733ed "pdflatex"
-  "main.run.xml" 1726073578 2313 bf3e4322c3614feb21562dbefc98a9cd "pdflatex"
+  "main.out" 1726074131 1341 79ee6e48a15aad8c2f01573f35a6247a "pdflatex"
+  "main.run.xml" 1726074131 2313 bf3e4322c3614feb21562dbefc98a9cd "pdflatex"
   "main.tex" 1726071192 5516 3c85667a858feb5111ebb735adebcabc ""
-  "main.toc" 1726073578 573 01ab3bef24e3084efa46ffcd7653f6c5 "pdflatex"
+  "main.toc" 1726074131 664 b41c515eca7a6b95794b4cf58cb6b03c "pdflatex"
   "structure.tex" 1725272529 15201 0d56d0fefd6e6976ce51c3d195a844b1 ""
   (generated)
   "LECTURE_4/lecture_4.aux"

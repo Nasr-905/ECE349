@@ -497,12 +497,6 @@ INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\tex\latex\tools\.tex
 INPUT main.aex
 INPUT .\main.aex
 INPUT .\main.aex
-INPUT .\main.aux
-INPUT .\main.aux
-INPUT main.aux
-INPUT .\LECTURE_4\lecture_4.aux
-INPUT .\LECTURE_4\lecture_4.aux
-INPUT LECTURE_4\lecture_4.aux
 OUTPUT main.aux
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -519,19 +513,8 @@ INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\engl
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 OUTPUT main.bcf
-INPUT main.bbl
-INPUT .\main.bbl
-INPUT .\main.bbl
-INPUT .\main.bbl
-INPUT main.bbl
-INPUT .\main.out
-INPUT .\main.out
-INPUT main.out
-INPUT main.out
-OUTPUT main.pdf
-INPUT .\main.out
-INPUT .\main.out
 OUTPUT main.out
+OUTPUT main.pdf
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1pag.fd
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1pag.fd
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1pag.fd
@@ -572,24 +555,10 @@ INPUT .\Images\head1.jpg
 INPUT .\Images\head1.jpg
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagk8t.tfm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagd8t.tfm
-INPUT .\main.toc
-INPUT .\main.toc
-INPUT main.toc
-INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagk8t.tfm
-INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagd8t.tfm
-INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagd8t.tfm
-INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagk8t.tfm
 OUTPUT main.toc
 INPUT .\LECTURE_4\lecture_4.tex
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\avantgar\pagd8t.vf
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagd8r.tfm
-INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\avantgar\pagd8t.vf
-INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagd8r.tfm
-INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\avantgar\pagd8t.vf
-INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagd8r.tfm
-INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\avantgar\pagk8t.vf
-INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagk8r.tfm
 OUTPUT LECTURE_4\lecture_4.aux
 INPUT .\LECTURE_4\lecture_4.tex
 INPUT .\LECTURE_4\lecture_4.tex
@@ -601,8 +570,12 @@ INPUT .\Images\head1.jpg
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagk8t.tfm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagd8t.tfm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagk8t.tfm
+INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagd8t.tfm
+INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagd8t.tfm
+INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagk8t.tfm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ot1ztmcm.fd
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ot1ztmcm.fd
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ot1ztmcm.fd
@@ -650,6 +623,8 @@ INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\s
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\avantgar\pagd8t.vf
+INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagd8r.tfm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\avantgar\pagd8t.vf
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagd8r.tfm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\avantgar\pagd8t.vf
@@ -713,7 +688,10 @@ INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\psyro.tfm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagd8t.tfm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmbi8t.tfm
+INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\avantgar\pagd8t.vf
+INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\avantgar\pagd8r.tfm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmbi8t.vf
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmbi8r.tfm
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
@@ -728,7 +706,6 @@ INPUT .\LECTURE_4\lecture_4.aux
 INPUT LECTURE_4\lecture_4.aux
 INPUT .\main.out
 INPUT .\main.out
-INPUT main.run.xml
 OUTPUT main.run.xml
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\User PC\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb

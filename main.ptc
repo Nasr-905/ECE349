@@ -1,5 +1,11 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {Lecture I}AC Steady State Analysis (Thomas + Rosa 669-689)}{4}{chapter.1}%
+\contentsline {chapter}{\numberline {Lecture I}Power}{4}{chapter.1}%
 \ttl@stoptoc {default@0}
 \ttl@starttoc {default@1}
+\contentsline {section}{\numberline {I.I}Average Power}{4}{section.1.1}%
+\contentsline {section}{\numberline {I.II}Displacement Factor}{4}{section.1.2}%
+\contentsline {section}{\numberline {I.III}P \& Q from Phasors}{5}{section.1.3}%
+\contentsline {subsection}{\numberline {I.III.I}Root Mean Square (RMS) Values (Erickson E.d. 2: 16.2, E.d.3 20.2)}{6}{subsection.1.3.1}%
+\contentsline {section}{\numberline {I.IV}RMS of Sinusoidal Signals}{7}{section.1.4}%
+\contentsline {section}{\numberline {I.V}Total Harmonic Distortion (THD)}{7}{section.1.5}%
 \contentsfinish 

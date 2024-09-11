@@ -1,0 +1,150 @@
+\chapter{Power}
+
+\section{Average Power}
+
+\begin{definition}
+    [Average Power]
+    The average power is the time average of the instantaneous power.
+    \begin{align}
+        p(t) & = v(t)i(t)                                                                                                                     \\
+        P    & = \frac{1}{T}\int_{0}^{T}p(t)dt                                                                                                \\
+        P    & = \frac{1}{T}\int_{0}^{T}\frac{\hat{V}\hat{I}}{2}(\cos(1 + 2\omega t)) + \frac{\hat{V}\hat{I}}{2}\sin(\phi)(\sin(2\omega t))dt \\ \text{Just use this } P & = \frac{\hat{V}\hat{I}}{2}\cos(\phi)
+    \end{align}
+    The first term is the real power and the second term is the reactive power (in/out of storage element).
+\end{definition}
+
+\begin{definition}
+    [Reactive Power]
+    Measure of energy going in/out of storage element. Essentially, the imaginary part of the complex power.
+    \begin{align}
+        Q \triangleq \frac{\hat{V}\hat{I}}{2}\sin(\phi)
+    \end{align}
+\end{definition}
+
+\section{Displacement Factor}
+\begin{definition}
+    [Displacement Factor]
+    The displacement factor is the cosine of the phase difference between the voltage and current. Essentially a measure of the angle between the voltage and current.
+    \begin{align}
+        \text{DF} \triangleq \cos(\phi)
+    \end{align}
+    \textit{$DF = 1$ means the voltage and current are in phase and you get the most real power.}
+\end{definition}
+
+\begin{remark}
+    As a power company, you want to have a high displacement factor to reduce the amount of reactive power you have to supply. Increasing the amperage, you would need thicker wires and more expensive equipment, so you want to maximize $W/A$.
+\end{remark}
+
+\begin{example}
+    [Displacement Factor]
+    \begin{align}
+        \text{DF} & = 0.866 \implies \phi = \pm 30^{\circ} \\
+    \end{align}
+\end{example}
+\begin{vocabulary}
+    [Lagging/Leading Power Factor]
+    \begin{align}
+        \text{Lagging} & : \phi > 0 \hat{I} \quad \text{lags}\quad  \hat{V}          \\
+        \text{Leading} & : \phi < 0 \hat{I} \quad \text{leads}\quad  \hat{V}         \\
+        \text{Unity}   & : \phi = 0 \hat{I} \quad \text{in phase with}\quad  \hat{V}
+    \end{align}
+\end{vocabulary}
+
+% tikz graph polar plot of power factor
+\begin{figure}
+    \centering
+    \begin{tikzpicture}
+        % polar plot of voltage and current
+        \draw[->] (0,0) -- (0,3) node[anchor=south] {$\hat{V}$};
+        \draw[->] (0,0) -- (3,0) node[anchor=west] {$\hat{I}$};
+        \draw[->] (0,0) -- (2.6,2.6) node[anchor=south west] {$\hat{S}$};
+        \draw[->] (0,0) -- (2.6,0) node[anchor=north] {$\hat{P}$};
+        \draw[->] (0,0) -- (0,2.6) node[anchor=east] {$\hat{Q}$};
+    \end{tikzpicture}
+\end{figure}
+
+\section{P \& Q from Phasors}
+
+\begin{definition}
+    [Complex Power]
+    \begin{align}
+        P & = \frac{\hat{V}\hat{I}}{2}\cos(\phi_{V} - \phi_{I})           \\
+          & = \frac{1}{2}\hat{V}\hat{I}\Re{e^{j\phi_{V}}e^{-j\phi_{I}}}   \\
+          & = \frac{1}{2}\Re{[\hat{V}e^{j\phi_{V}}\hat{I}e^{-j\phi_{I}}]} \\
+          & = \frac{1}{2}\Re[{\hat{V}\cdot \hat{I}^{*}}]                  \\
+    \end{align}
+
+    \begin{align}
+        Q & = \frac{\hat{V}\hat{I}}{2}\sin(\phi_{V} - \phi_{I})           \\
+          & = \frac{1}{2}\hat{V}\hat{I}\Im{e^{j\phi_{V}}e^{-j\phi_{I}}}   \\
+          & = \frac{1}{2}\Im{[\hat{V}e^{j\phi_{V}}\hat{I}e^{-j\phi_{I}}]} \\
+          & = \frac{1}{2}\Im[{\hat{V}\cdot \hat{I}^{*}}]                  \\
+    \end{align}
+    So we define:
+    \begin{align}
+        S & = \frac{1}{2}(\hat{\underline{V}}\cdot \hat{\underline{I}}^{*}) \qquad \frac{1}{2}\text{ because we use peak values} \\
+          & = P + jQ                                                                                                             \\
+        P & = \Re{S}                                                                                                             \\
+        Q & = \Im{S}
+    \end{align}
+\end{definition}
+
+\begin{remark}
+    Review Thomas/Rose 16.1 to 16.3 for more information on complex power.
+\end{remark}
+
+\subsection{Root Mean Square (RMS) Values (Erickson E.d. 2: 16.2, E.d.3 20.2)}
+
+\begin{theorem}
+    \begin{align}
+        p(t) & = v(t)i(t)                                       \\
+             & = v(t) \cdot \frac{v(t)}{R}                      \\
+             & = \frac{v^{2}(t)}{R}                             \\
+             & = \frac{1}{R}[\frac{1}{T}\int_{0}^{T}v^{2}(t)dt] \\
+    \end{align}
+    We want to find a way to relate the average power to the $v^2(t)$ (or $i^2(t)$), without worrying about whether it's a sine wave, square wave, etc. Using RMS values allows us to treat all signals the same.
+    \begin{align}
+        V_{rms} & = \sqrt{\frac{1}{T}\int_{0}^{T}v^{2}(t)dt} \\
+        I_{rms} & = \sqrt{\frac{1}{T}\int_{0}^{T}i^{2}(t)dt}
+    \end{align}
+\end{theorem}
+
+\begin{definition}
+    [RMS Values]
+    Measure of \textit{\textbf{average power}} and \textit{\textbf{periodic signal}} of a sinusoidal signal.
+    \begin{align}
+        P = \frac{1}{R}v_{rms}^{2} \\
+        P = \frac{1}{R}i_{rms}^{2}
+    \end{align}
+\end{definition}
+
+\section{RMS of Sinusoidal Signals}
+
+\begin{proof}
+    \begin{align}
+        v_{rms} & = \sqrt{\frac{1}{2\pi}\int_{0}^{2\pi}\hat{V}^{2}\sin^{2}(\omega t)dt}                \\
+        v_{rms} & = \frac{1}{\sqrt{2}}\hat{V} \qquad \text{ \textbf{ONLY} for pure sinusoidal signals}
+    \end{align}
+\end{proof}
+
+\begin{example}
+    [RMS of Sinusoidal Superpositions]
+    If
+    \begin{align}
+        v(t)                     & = v_0 + \hat{V_1}\cos{(\omega t + \phi_1)} + \hat{V_2}\cos{(\omega t + \phi_2)} \\
+        v_{rms}                  & = \sqrt{V_1^2 + \sum_{i=1}^{n}\frac{V_i^2}{\sqrt{2}}}                           \\
+        \text{or } \quad v_{rms} & = \sqrt{V_1^2 + \sum_{i=1}^{n}V_i^2} \quad \text{where $V_i$ is RMS}
+    \end{align}
+\end{example}
+
+\section{Total Harmonic Distortion (THD)}
+
+\begin{definition}
+    [THD]
+    The THD is the ratio of the sum of the powers of all harmonic components to the power of the fundamental frequency. Essentially, how bad are harmonics compared to the fundamental (AC) frequency.
+    \begin{align}
+        THD = \frac{\sqrt{V_2^2 + V_3^2 + \ldots + V_n^2}}{V_1} \\
+        THD = \frac{\sqrt{\sum_{i=2}^{n}V_i^2}}{V_1}
+    \end{align}
+    \textit{All in RMS values.}
+\end{definition}
